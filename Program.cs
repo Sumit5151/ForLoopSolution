@@ -1,11 +1,19 @@
 ﻿
 
+using ForLoopDemo;
+using System;
+
 public class Program
 {
     public static void Main()
     {
         //PrintNumbers();
-        NestedLoop();
+        //NestedLoop();
+
+        //Pattern.Pattern1();
+        //Pattern.Pattern2();
+        //Pattern.Pattern3();
+        Pattern.Pattern4();
     }
 
 
