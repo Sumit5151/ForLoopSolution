@@ -9,6 +9,45 @@ namespace ForLoopDemo
     internal class Pattern
     {
 
+
+
+        public static void Staticfunction1()
+        {
+
+        }
+
+        public static void Staticfunction2()
+        {
+            Staticfunction1();
+
+            Pattern pattern = new Pattern();
+            pattern.NonStaticFunction1();
+        }
+
+
+        public void NonStaticFunction1()
+        {
+            Staticfunction1();   
+            NonStaticFunction2();
+        }
+
+
+        public void NonStaticFunction2()
+        {
+            
+        }
+
+
+
+
+
+
+
+
+
+
+
+
         public static void Pattern1()
         {
 
@@ -77,7 +116,7 @@ namespace ForLoopDemo
             }
 
         }
-
+        //This is changed
 
         //1 2 3
         //4 5 6

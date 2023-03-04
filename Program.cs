@@ -13,7 +13,18 @@ public class Program
         //Pattern.Pattern1();
         //Pattern.Pattern2();
         //Pattern.Pattern3();
-        Pattern.Pattern4();
+        //Pattern.Pattern4();
+
+
+
+        Pattern.Staticfunction1();
+
+
+        Pattern pattern = new Pattern();
+        pattern.NonStaticFunction1();
+
+
+
     }
 
 
