@@ -14,15 +14,21 @@ public class Program
         //Pattern.Pattern2();
         //Pattern.Pattern3();
         //Pattern.Pattern4();
+        //Pattern.Staticfunction1();
+        
+
+        Pattern patternObj1 = new Pattern();       
+        //patternObj1.StarPattern1();
+        //patternObj1.StarPattern2();
+        patternObj1.StarPattern3();
 
 
+        //Pattern patternObj2= new Pattern();
+        //patternObj2.num = 20;
 
-        Pattern.Staticfunction1();
-
-
-        Pattern pattern = new Pattern();
-        pattern.NonStaticFunction1();
-
+        //patternObj1.StarPattern2();
+        
+        //patternObj2.StarPattern2();
 
 
     }
