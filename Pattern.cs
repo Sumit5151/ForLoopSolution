@@ -8,20 +8,20 @@ namespace ForLoopDemo
 {
     internal class Pattern
     {
-       public int num { get; set; }
+        public int num { get; set; }
 
-       void GetNumberFromUser()
+        void GetNumberFromUser()
         {
             Console.WriteLine("Please enter any number");
-            num = Convert.ToInt32( Console.ReadLine());
+            num = Convert.ToInt32(Console.ReadLine());
         }
 
 
-       public void StarPattern1()
+        public void StarPattern1()
         {
             GetNumberFromUser();
 
-            for(int i = 1; i <= num; i++)
+            for (int i = 1; i <= num; i++)
             {
                 for (int j = 1; j <= i; j++)
                 {
@@ -31,11 +31,11 @@ namespace ForLoopDemo
             }
         }
 
-      public void StarPattern2()
+        public void StarPattern2()
         {
             GetNumberFromUser();
 
-            for (int i = num; i >=1; i--)
+            for (int i = num; i >= 1; i--)
             {
                 for (int j = 1; j <= i; j++)
                 {
@@ -52,59 +52,130 @@ namespace ForLoopDemo
 
             for (int i = 1; i <= num; i++)
             {
-
-                for (int k = num - i; k >=1; k--)
-                {
-                    Console.Write(" ");
-                }
-
                 for (int j = 1; j <= i; j++)
                 {
                     Console.Write("*");
                 }
-
-                for (int j = 1; j <= i; j++)
-                {
-                    Console.Write("*");
-                }
-
-
-                Console.WriteLine();
-            }
-
-
-
-            for (int i = num; i >=1; i--)
-            {
-
-                for (int k = num - i; k >= 1; k--)
-                {
-                    Console.Write(" ");
-                }
-
-                for (int j = 1; j <= i; j++)
-                {
-                    Console.Write("*");
-                }
-
-                for (int j = 1; j <= i; j++)
-                {
-                    Console.Write("*");
-                }
-
-
                 Console.WriteLine();
             }
         }
 
+        public void StarPattern4()
+        {
+            GetNumberFromUser();
+
+            for (int i = num; i >= 1; i--)
+            {
+
+                for (int j = 1; j <= i; j++)
+                {
+                    Console.Write("*");
+                }
+
+                Console.WriteLine();
+            }
+
+        }
+
+
+        public void StarPattern5()
+        {
+            GetNumberFromUser();
+
+            for (int i = 1; i <= num; i++)
+            {
+                for (int j = 1; j <= i; j++)
+                {
+                    Console.Write("*");
+                }
+                Console.WriteLine();
+            }
+
+
+            for (int i = num-1; i >= 1; i--)
+            {
+                for (int j = 1; j <= i; j++)
+                {
+                    Console.Write("*");
+                }
+                Console.WriteLine();
+            }
+
+
+            for (int i = num - 1; i >= 1; i--)
+            {
+                for (int j = 1; j <= i; j++)
+                {
+                    Console.Write("*");
+                }
+                Console.WriteLine();
+            }
+
+        }
+
+
+        public void StarPattern6()
+        {
+            GetNumberFromUser();
+
+            for (int i = 1; i <= num; i++)
+            {
+                // 4
+                // 3
+                // 2
+                // 1
+
+                                     
+                for (int k = 1; k <=num-i; k++)
+                {
+                    Console.Write(" ");
+                }
+
+                for (int j = 1; j <= i; j++)
+                {
+                    Console.Write("*");
+                }
+
+                for (int j = 1; j <= i-1; j++)
+                {
+                    Console.Write("*");
+                }
+
+                Console.WriteLine();
+            }
 
 
 
+            for (int i = num-1; i >= 1; i--)
+            {
+                // 4
+                // 3
+                // 2
+                // 1
 
 
+                for (int k = 1; k <= num - i; k++)
+                {
+                    Console.Write(" ");
+                }
+
+                for (int j = 1; j <= i; j++)
+                {
+                    Console.Write("*");
+                }
+
+                for (int j = 1; j <= i - 1; j++)
+                {
+                    Console.Write("*");
+                }
+
+                Console.WriteLine();
+            }
+
+        }
 
 
-        public static void Staticfunction1()
+            public static void Staticfunction1()
         {
 
         }
@@ -120,14 +191,14 @@ namespace ForLoopDemo
 
         public void NonStaticFunction1()
         {
-            Staticfunction1();   
+            Staticfunction1();
             NonStaticFunction2();
         }
 
 
         public void NonStaticFunction2()
         {
-            
+
         }
 
 
@@ -139,14 +210,14 @@ namespace ForLoopDemo
             Console.WriteLine("Please enter the limit");
             string str = Console.ReadLine();
             var limit = Convert.ToInt32(str);
-           
+
 
             //limit = 5
             for (int i = 1; i <= limit; i++)
             {
                 for (int j = 1; j <= limit; j++)
                 {
-                    Console.Write(j+" ");
+                    Console.Write(j + " ");
                 }
 
                 Console.WriteLine();
@@ -163,7 +234,7 @@ namespace ForLoopDemo
             string str = Console.ReadLine();
             var limit = Convert.ToInt32(str);
 
-        
+
 
             //limit = 5
             for (int i = 1; i <= limit; i++)
@@ -195,7 +266,7 @@ namespace ForLoopDemo
             {
                 for (int j = 1; j <= 5; j++)
                 {
-                    Console.Write(" "+ Convert.ToChar(96 +i));
+                    Console.Write(" " + Convert.ToChar(96 + i));
                 }
                 Console.WriteLine();
             }
@@ -206,7 +277,7 @@ namespace ForLoopDemo
         //1 2 3
         //4 5 6
         //7 8 9
-        
+
         public static void Pattern4()
         {
             int k = 1;

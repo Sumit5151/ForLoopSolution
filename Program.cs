@@ -20,7 +20,11 @@ public class Program
         Pattern patternObj1 = new Pattern();       
         //patternObj1.StarPattern1();
         //patternObj1.StarPattern2();
-        patternObj1.StarPattern3();
+        //patternObj1.StarPattern3();
+        //patternObj1.StarPattern4();
+        //patternObj1.StarPattern5();
+        patternObj1.StarPattern6();
+
 
 
         //Pattern patternObj2= new Pattern();
