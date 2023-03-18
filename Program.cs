@@ -7,6 +7,10 @@ public class Program
 {
     public static void Main()
     {
+
+        LogicalPrograms logicalPrograms = new LogicalPrograms();
+        logicalPrograms.CalculateLCM();
+
         //PrintNumbers();
         //NestedLoop();
 
@@ -15,7 +19,7 @@ public class Program
         //Pattern.Pattern3();
         //Pattern.Pattern4();
         //Pattern.Staticfunction1();
-        
+
 
         Pattern patternObj1 = new Pattern();       
         //patternObj1.StarPattern1();
@@ -23,7 +27,7 @@ public class Program
         //patternObj1.StarPattern3();
         //patternObj1.StarPattern4();
         //patternObj1.StarPattern5();
-        patternObj1.StarPattern6();
+       // patternObj1.StarPattern6();
 
 
 
