@@ -8,8 +8,13 @@ public class Program
     public static void Main()
     {
 
-        LogicalPrograms logicalPrograms = new LogicalPrograms();
-        logicalPrograms.CalculateLCM();
+        PrimeNumber primeNumber = new PrimeNumber();
+        primeNumber.CheckPrimeNumber();
+        //OddEvenNumberClass oddEvenNumberClass = new OddEvenNumberClass();
+        //oddEvenNumberClass.OddNumber();
+
+        //LogicalPrograms logicalPrograms = new LogicalPrograms();
+        //logicalPrograms.CalculateLCM();
 
         //PrintNumbers();
         //NestedLoop();
